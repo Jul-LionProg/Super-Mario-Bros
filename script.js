@@ -33,3 +33,11 @@ const restartGame = () => {
   audioStart.currentTime = 0;
 
 }
+
+const jump = () => {
+  mario.classList.add('jump')
+
+  setTimeout(() => {
+    mario.classList.remove('jump')
+  }, 800)
+}
