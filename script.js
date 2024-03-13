@@ -53,3 +53,21 @@ const loop = () => {
     if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
       pipe.classList.remove('.pipe-animation')
       pipe.style.left = `${pipePosition}px`
+      mario.classList.remove('.jump')
+      mario.style.bottom = `${marioPosition}px`
+
+      mario.src = 'MINI-GAME-MARIO-main/MARIO/img/game-over.png'
+      mario.style.width = '80px'
+      mario.style.marginLeft = '50px'
+      
+      
+      function stopAudioStart() {
+        audioStart.pause()
+      }
+      stopAudioStart()
+      
+      audioGameOver.play()
+      
+      function stopAudio() {
+        audioGameOver.pause()
+      }
