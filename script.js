@@ -71,3 +71,11 @@ const loop = () => {
       function stopAudio() {
         audioGameOver.pause()
       }
+      setTimeout(stopAudio, 7000)
+      
+      gameOver.style.display = 'flex'
+      
+      clearInterval(loop)
+    }
+  }, 10)
+}
