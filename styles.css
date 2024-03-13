@@ -14,7 +14,6 @@
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
-
 button {
     background: green;
     color: white;
@@ -83,6 +82,7 @@ button:hover {
         right: 100%;
     }
 }
+
 .jump {
     animation: jump 800ms ease-out;
 }
