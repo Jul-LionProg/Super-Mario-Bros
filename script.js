@@ -31,7 +31,6 @@ const restartGame = () => {
 
   audioStart.play()
   audioStart.currentTime = 0;
-
 }
 
 const jump = () => {
