@@ -15,3 +15,21 @@ const startGame = () => {
   // audio
   audioStart.play()
 }
+
+const restartGame = () => {
+  gameOver.style.display = 'none'
+  pipe.style.left = ''
+  pipe.style.right = '0'
+  mario.src = './src/img/mario.gif'
+  mario.style.width = '150px'
+  mario.style.bottom = '0'
+
+  start.style.display = 'none'
+
+  audioGameOver.pause()
+  audioGameOver.currentTime = 0;
+
+  audioStart.play()
+  audioStart.currentTime = 0;
+
+}
