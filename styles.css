@@ -79,3 +79,25 @@ const loop = () => {
     }
   }, 10)
 }
+
+loop()
+
+document.addEventListener('keypress', e => {
+  const tecla = e.key
+  if (tecla === ' ') {
+    jump()
+  }
+})
+
+document.addEventListener('touchstart', e => {
+  if (e.touches.length) {
+    jump() 
+  }
+})
+
+document.addEventListener('keypress', e => {
+  const tecla = e.key
+  if (tecla === 'Enter') {
+    startGame()
+  }
+})
