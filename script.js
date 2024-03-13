@@ -41,3 +41,15 @@ const jump = () => {
     mario.classList.remove('jump')
   }, 800)
 }
+
+
+const loop = () => {
+  setInterval(() => {
+    const pipePosition = pipe.offsetLeft
+    const marioPosition = window
+      .getComputedStyle(mario)
+      .bottom.replace('px', ' ')
+
+    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+      pipe.classList.remove('.pipe-animation')
+      pipe.style.left = `${pipePosition}px`
